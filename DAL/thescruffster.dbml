@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="biko" Class="thescruffsterDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Table Name="dbo.SecretSanta" Member="SecretSantas">
+    <Type Name="SecretSanta">
+      <Column Name="SecretSantaID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="UserID" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="Name" Type="System.String" DbType="VarChar(500)" CanBeNull="true" />
+      <Column Name="Email" Type="System.String" DbType="VarChar(500)" CanBeNull="true" />
+      <Column Name="BrownleyID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Spouse" Type="System.String" DbType="VarChar(500)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Mishap" Member="Mishaps">
+    <Type Name="Mishap">
+      <Column Name="ErrorID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Error" Type="System.String" DbType="VarChar(1000)" CanBeNull="true" />
+      <Column Name="UserName" Type="System.String" DbType="VarChar(1000)" CanBeNull="true" />
+      <Column Name="Date" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Brownley" Member="Brownleys">
+    <Type Name="Brownley">
+      <Column Name="BrownleyID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Name" Type="System.String" DbType="VarChar(500) NOT NULL" CanBeNull="false" />
+      <Column Name="WishList" Type="System.String" DbType="VarChar(500)" CanBeNull="true" />
+      <Column Name="IsChosen" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="[2009_Wish_List]" Member="_2009_Wish_List" Type="System.String" DbType="VarChar(1000)" CanBeNull="true" />
+      <Column Name="[2010_Wish_List]" Member="_2010_Wish_List" Type="System.String" DbType="VarChar(1000)" CanBeNull="true" />
+      <Column Name="[2011_Wish_List]" Member="_2011_Wish_List" Type="System.String" DbType="VarChar(1000)" CanBeNull="true" />
+      <Column Name="[2012_Wish_List]" Member="_2012_Wish_List" Type="System.String" DbType="VarChar(1000)" CanBeNull="true" />
+    </Type>
+  </Table>
+</Database>

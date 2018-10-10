@@ -1,0 +1,430 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{E3555651-4633-426F-936C-3680A626BEF7}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>thescruffster</RootNamespace>
+    <AssemblyName>thescruffster</AssemblyName>
+    <TargetFrameworkVersion>v4.5.1</TargetFrameworkVersion>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>4.0</OldToolsVersion>
+    <UseIISExpress>false</UseIISExpress>
+    <TargetFrameworkProfile />
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AjaxControlToolkit, Version=3.0.20229.20843, Culture=neutral, PublicKeyToken=28f01b0e84b6d53e, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.Web.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>packages\Newtonsoft.Json.6.0.8\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Net.Http.Formatting, Version=5.2.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>packages\Microsoft.AspNet.WebApi.Client.5.2.3\lib\net45\System.Net.Http.Formatting.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http.WebRequest" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Helpers, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>packages\Microsoft.AspNet.WebPages.3.2.3\lib\net45\System.Web.Helpers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Http, Version=5.2.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>packages\Microsoft.AspNet.WebApi.Core.5.2.3\lib\net45\System.Web.Http.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Http.WebHost, Version=5.2.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>packages\Microsoft.AspNet.WebApi.WebHost.5.2.3\lib\net45\System.Web.Http.WebHost.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Mvc, Version=5.2.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>packages\Microsoft.AspNet.Mvc.5.2.3\lib\net45\System.Web.Mvc.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Razor, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>packages\Microsoft.AspNet.Razor.3.2.3\lib\net45\System.Web.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>packages\Microsoft.AspNet.WebPages.3.2.3\lib\net45\System.Web.WebPages.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Deployment, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>packages\Microsoft.AspNet.WebPages.3.2.3\lib\net45\System.Web.WebPages.Deployment.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Razor, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>packages\Microsoft.AspNet.WebPages.3.2.3\lib\net45\System.Web.WebPages.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.Mobile" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="admin\manageusers.aspx" />
+    <Content Include="App_Data\thescruffster.mdf" />
+    <Content Include="App_Data\thescruffster_log.ldf">
+      <DependentUpon>thescruffster.mdf</DependentUpon>
+    </Content>
+    <Content Include="Areas\MVCArea\Views\Home\Index.aspx" />
+    <Content Include="CodeSnippets\Default.aspx" />
+    <Content Include="Content\bootstrap-theme.css" />
+    <Content Include="Content\bootstrap-theme.min.css" />
+    <Content Include="Content\bootstrap.css" />
+    <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Default.aspx" />
+    <Content Include="fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="images\bg.jpg" />
+    <Content Include="images\bgwrapper.jpg" />
+    <Content Include="images\datebtm.jpg" />
+    <Content Include="images\datetop.jpg" />
+    <Content Include="images\IMG_0508.jpg" />
+    <Content Include="images\IMG_0508b.jpg" />
+    <Content Include="images\IMG_0509.jpg" />
+    <Content Include="images\IMG_0509b.jpg" />
+    <Content Include="images\IMG_0510.jpg" />
+    <Content Include="images\IMG_0510b.jpg" />
+    <Content Include="images\IMG_0511.jpg" />
+    <Content Include="images\IMG_0511b.jpg" />
+    <Content Include="images\IMG_0512.jpg" />
+    <Content Include="images\IMG_0512b.jpg" />
+    <Content Include="images\IMG_0513.jpg" />
+    <Content Include="images\IMG_0513b.jpg" />
+    <Content Include="images\IMG_0514.jpg" />
+    <Content Include="images\IMG_0514b.jpg" />
+    <Content Include="images\IMG_0515.jpg" />
+    <Content Include="images\IMG_0515b.jpg" />
+    <Content Include="images\IMG_0516.jpg" />
+    <Content Include="images\IMG_0516b.jpg" />
+    <Content Include="images\IMG_0517.jpg" />
+    <Content Include="images\IMG_0517b.jpg" />
+    <Content Include="images\IMG_0518.jpg" />
+    <Content Include="images\IMG_0518b.jpg" />
+    <Content Include="images\IMG_0519.jpg" />
+    <Content Include="images\IMG_0519b.jpg" />
+    <Content Include="images\IMG_0520.jpg" />
+    <Content Include="images\IMG_0520b.jpg" />
+    <Content Include="images\IMG_0521.jpg" />
+    <Content Include="images\IMG_0521b.jpg" />
+    <Content Include="images\IMG_0522.jpg" />
+    <Content Include="images\IMG_0522b.jpg" />
+    <Content Include="images\IMG_0523.jpg" />
+    <Content Include="images\IMG_0523b.jpg" />
+    <Content Include="images\IMG_0524.jpg" />
+    <Content Include="images\IMG_0524b.jpg" />
+    <Content Include="images\IMG_0525.jpg" />
+    <Content Include="images\IMG_0525b.jpg" />
+    <Content Include="images\IMG_0526.jpg" />
+    <Content Include="images\IMG_0526b.jpg" />
+    <Content Include="images\IMG_0527.jpg" />
+    <Content Include="images\IMG_0527b.jpg" />
+    <Content Include="images\IMG_0528.jpg" />
+    <Content Include="images\IMG_0528b.jpg" />
+    <Content Include="images\IMG_0529.jpg" />
+    <Content Include="images\IMG_0529b.jpg" />
+    <Content Include="images\IMG_0530.jpg" />
+    <Content Include="images\IMG_0530b.jpg" />
+    <Content Include="images\IMG_0531.jpg" />
+    <Content Include="images\IMG_0531b.jpg" />
+    <Content Include="images\IMG_0532.jpg" />
+    <Content Include="images\IMG_0532b.jpg" />
+    <Content Include="images\IMG_0533.jpg" />
+    <Content Include="images\IMG_0533b.jpg" />
+    <Content Include="images\IMG_0534.jpg" />
+    <Content Include="images\IMG_0534b.jpg" />
+    <Content Include="images\IMG_0535.jpg" />
+    <Content Include="images\IMG_0535b.jpg" />
+    <Content Include="images\IMG_0536.jpg" />
+    <Content Include="images\IMG_0536b.jpg" />
+    <Content Include="images\IMG_0537.jpg" />
+    <Content Include="images\IMG_0537b.jpg" />
+    <Content Include="images\IMG_0538.jpg" />
+    <Content Include="images\IMG_0538b.jpg" />
+    <Content Include="images\IMG_0539.jpg" />
+    <Content Include="images\IMG_0539b.jpg" />
+    <Content Include="images\IMG_0540.jpg" />
+    <Content Include="images\IMG_0540b.jpg" />
+    <Content Include="images\IMG_0541.jpg" />
+    <Content Include="images\IMG_0541b.jpg" />
+    <Content Include="images\IMG_0542.jpg" />
+    <Content Include="images\IMG_0542b.jpg" />
+    <Content Include="images\IMG_0543.jpg" />
+    <Content Include="images\IMG_0543b.jpg" />
+    <Content Include="images\IMG_0544.jpg" />
+    <Content Include="images\IMG_0544b.jpg" />
+    <Content Include="images\IMG_0545.jpg" />
+    <Content Include="images\IMG_0545b.jpg" />
+    <Content Include="images\IMG_0546.jpg" />
+    <Content Include="images\IMG_0546b.jpg" />
+    <Content Include="images\IMG_0547.jpg" />
+    <Content Include="images\IMG_0547b.jpg" />
+    <Content Include="images\IMG_0548.jpg" />
+    <Content Include="images\IMG_0548b.jpg" />
+    <Content Include="images\IMG_0549.jpg" />
+    <Content Include="images\IMG_0549b.jpg" />
+    <Content Include="images\IMG_0550.jpg" />
+    <Content Include="images\IMG_0550b.jpg" />
+    <Content Include="images\IMG_0551.jpg" />
+    <Content Include="images\IMG_0551b.jpg" />
+    <Content Include="images\IMG_0552.jpg" />
+    <Content Include="images\IMG_0552b.jpg" />
+    <Content Include="images\IMG_0553.jpg" />
+    <Content Include="images\IMG_0553b.jpg" />
+    <Content Include="images\IMG_0554.jpg" />
+    <Content Include="images\IMG_0554b.jpg" />
+    <Content Include="images\IMG_0555.jpg" />
+    <Content Include="images\IMG_0555b.jpg" />
+    <Content Include="images\IMG_0556.jpg" />
+    <Content Include="images\IMG_0556b.jpg" />
+    <Content Include="images\IMG_0557.jpg" />
+    <Content Include="images\IMG_0557b.jpg" />
+    <Content Include="images\loginbg.jpg" />
+    <Content Include="images\loginbtn.jpg" />
+    <Content Include="images\mainheader.jpg" />
+    <Content Include="images\scruff.jpg" />
+    <Content Include="images\scruffy.jpg" />
+    <Content Include="images\slatepx.jpg" />
+    <Content Include="reunion\pictures.aspx" />
+    <Content Include="fonts\glyphicons-halflings-regular.woff2" />
+    <Content Include="fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="Content\bootstrap-theme.min.css.map" />
+    <Content Include="Content\bootstrap-theme.css.map" />
+    <Content Include="Content\bootstrap.min.css.map" />
+    <Content Include="Content\bootstrap.css.map" />
+    <None Include="scripts\jquery-1.9.1.intellisense.js" />
+    <Content Include="scripts\bootstrap.js" />
+    <Content Include="scripts\bootstrap.min.js" />
+    <Content Include="scripts\jquery-1.9.1.js" />
+    <Content Include="scripts\jquery-1.9.1.min.js" />
+    <Content Include="styles.css" />
+    <Content Include="styles\Hourglass_icon.gif" />
+    <Content Include="styles\spinning.gif" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="scripts\jquery-1.9.1.min.map" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="admin\manageusers.aspx.cs">
+      <DependentUpon>manageusers.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\manageusers.aspx.designer.cs">
+      <DependentUpon>manageusers.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Areas\MVCArea\Controllers\HomeController.cs" />
+    <Compile Include="Areas\MVCArea\MVCAreaAreaRegistration.cs" />
+    <Compile Include="CodeSnippets\Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CodeSnippets\Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\PictureTables.cs" />
+    <Compile Include="DAL\thescruffster.cs">
+      <DependentUpon>thescruffster.dbml</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\thescruffster.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>thescruffster.dbml</DependentUpon>
+    </Compile>
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="error.aspx.cs">
+      <DependentUpon>error.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="error.aspx.designer.cs">
+      <DependentUpon>error.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="reunion\pictures.aspx.cs">
+      <DependentUpon>pictures.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="reunion\pictures.aspx.designer.cs">
+      <DependentUpon>pictures.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\SecretSantaData.cs" />
+    <Compile Include="secretsanta\default.aspx.cs">
+      <DependentUpon>default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="secretsanta\default.aspx.designer.cs">
+      <DependentUpon>default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="secretsanta\shhhh.aspx.cs">
+      <DependentUpon>shhhh.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="secretsanta\shhhh.aspx.designer.cs">
+      <DependentUpon>shhhh.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebForm1.aspx.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebForm1.aspx.designer.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="error.aspx" />
+    <Content Include="Global.asax" />
+    <Content Include="reunion\Web.config" />
+    <Content Include="scripts\jquery-1.4.1.js" />
+    <Content Include="scripts\jquery-1.4.1.min.js" />
+    <Content Include="scripts\jquery-1.4.3.js" />
+    <Content Include="scripts\MicrosoftAjax.js" />
+    <Content Include="secretsanta\default.aspx" />
+    <Content Include="secretsanta\shhhh.aspx" />
+    <Content Include="styles\bg.jpg" />
+    <Content Include="styles\bg.png" />
+    <Content Include="styles\big-rc1.jpg" />
+    <Content Include="styles\big-rc2.jpg" />
+    <Content Include="styles\bow.png" />
+    <Content Include="styles\gradient.jpg" />
+    <Content Include="styles\notspinning.gif" />
+    <Content Include="styles\rc1.jpg" />
+    <Content Include="styles\rc2.jpg" />
+    <Content Include="styles\santa.jpg" />
+    <Content Include="styles\secretsanta.css" />
+    <Content Include="styles\title.png" />
+    <Content Include="styles\transmitting.gif" />
+    <Content Include="WebForm1.aspx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{3259AA49-8AA1-44D3-9025-A0B520596A8C}" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="bahamas\web.config" />
+    <Content Include="bin\thescruffster.dll" />
+    <Content Include="bin\thescruffster.pdb" />
+    <Content Include="obj\Debug\TempPE\DAL.thescruffster.designer.cs.dll" />
+    <Content Include="obj\Debug\thescruffster.csproj.FileListAbsolute.txt" />
+    <Content Include="obj\Debug\thescruffster.dll" />
+    <Content Include="obj\Debug\thescruffster.pdb" />
+    <Content Include="scripts\jquery.lettering-0.6.1.min.js" />
+    <Content Include="styles\add.jpg" />
+    <Content Include="styles\add_pressed.jpg" />
+    <Content Include="styles\bow.jpg" />
+    <Content Include="thescruffster.Publish.xml" />
+    <Content Include="Areas\MVCArea\Views\Web.config" />
+    <None Include="DAL\thescruffster.dbml">
+      <Generator>MSLinqToSQLGenerator</Generator>
+      <LastGenOutput>thescruffster.designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="obj\Debug\ResolveAssemblyReference.cache" />
+    <Content Include="packages.config">
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Areas\MVCArea\Models\" />
+    <Folder Include="Areas\MVCArea\Views\Shared\" />
+    <Folder Include="aspnet_client\system_web\2_0_50727\" />
+    <Folder Include="obj\Debug\Refactor\" />
+    <Folder Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="DAL\thescruffster.dbml.layout">
+      <DependentUpon>thescruffster.dbml</DependentUpon>
+    </None>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>1970</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost/thescruffsterMVC</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>
