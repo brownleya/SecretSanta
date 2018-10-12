@@ -386,7 +386,6 @@
     </Content>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Areas\" />
     <Folder Include="aspnet_client\system_web\2_0_50727\" />
     <Folder Include="obj\Debug\Refactor\" />
     <Folder Include="Properties\" />
