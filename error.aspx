@@ -5,7 +5,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" >
 <head id="Head1" runat="server">
     <title>thescruffster.com</title>
-   <link rel="StyleSheet" href="styles.css" type="text/css" />
+   <link rel="StyleSheet" href="styles.css" type="text/css" />  
 </head>
 <body class="bg" >
     <form id="form1" runat="server">
