@@ -276,6 +276,7 @@
     <Compile Include="CodeSnippets\Default.aspx.designer.cs">
       <DependentUpon>Default.aspx</DependentUpon>
     </Compile>
+    <Compile Include="DAL\PictureTables.cs" />
     <Compile Include="DAL\thescruffster.cs">
       <DependentUpon>thescruffster.dbml</DependentUpon>
     </Compile>
