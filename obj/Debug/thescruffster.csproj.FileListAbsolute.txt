@@ -66,3 +66,4 @@ C:\Users\angela\WebSiteMVC\bin\System.Web.WebPages.Deployment.xml
 C:\Users\angela\WebSiteMVC\bin\System.Web.WebPages.Razor.xml
 C:\Users\angela\WebSiteMVC\obj\Debug\thescruffster.dll
 C:\Users\angela\WebSiteMVC\obj\Debug\thescruffster.pdb
+C:\Users\angela\WebSiteMVC\obj\Debug\thescruffster.csprojResolveAssemblyReference.cache

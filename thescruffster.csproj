@@ -118,7 +118,6 @@
     <Content Include="App_Data\thescruffster_log.ldf">
       <DependentUpon>thescruffster.mdf</DependentUpon>
     </Content>
-    <Content Include="Areas\MVCArea\Views\Home\Index.aspx" />
     <Content Include="CodeSnippets\Default.aspx" />
     <Content Include="Content\bootstrap-theme.css" />
     <Content Include="Content\bootstrap-theme.min.css" />
@@ -272,8 +271,6 @@
     <Compile Include="admin\manageusers.aspx.designer.cs">
       <DependentUpon>manageusers.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Areas\MVCArea\Controllers\HomeController.cs" />
-    <Compile Include="Areas\MVCArea\MVCAreaAreaRegistration.cs" />
     <Compile Include="CodeSnippets\Default.aspx.cs">
       <DependentUpon>Default.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -378,7 +375,6 @@
     <Content Include="styles\add_pressed.jpg" />
     <Content Include="styles\bow.jpg" />
     <Content Include="thescruffster.Publish.xml" />
-    <Content Include="Areas\MVCArea\Views\Web.config" />
     <None Include="DAL\thescruffster.dbml">
       <Generator>MSLinqToSQLGenerator</Generator>
       <LastGenOutput>thescruffster.designer.cs</LastGenOutput>
@@ -390,8 +386,7 @@
     </Content>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Areas\MVCArea\Models\" />
-    <Folder Include="Areas\MVCArea\Views\Shared\" />
+    <Folder Include="Areas\" />
     <Folder Include="aspnet_client\system_web\2_0_50727\" />
     <Folder Include="obj\Debug\Refactor\" />
     <Folder Include="Properties\" />
