@@ -253,6 +253,13 @@
     <Content Include="styles\Hourglass_icon.gif" />
     <Content Include="styles\spinning.gif" />
     <Content Include="scripts\jquery-1.9.1.min.map" />
+    <Content Include="Web.config" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="admin\manageusers.aspx.cs">
