@@ -18,16 +18,7 @@ namespace thescruffster
 
         protected void Application_Start(object sender, EventArgs e)
         {
-           AreaRegistration.RegisterAllAreas();
-
-  //         RouteTable.Routes.MapHttpRoute(
-  //"defaultPost",
-  //"secretsanta/default",
-  //new { Controller = "default" },
-  //new { httpMethod = new HttpMethodConstraint("Post") }
-
-//);
-          
+                 
         
         }
 
